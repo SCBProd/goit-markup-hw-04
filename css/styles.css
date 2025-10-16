@@ -16,6 +16,33 @@
     --second-family: "Raleway", sans-serif;
 }
 
+.imgoverlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms ease-in-out;
+  background-color: #4d5ae5;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
+  padding: 40px 32px;
+}
+
+.image-list-item:hover .overlay {
+  transform: translateY(0);
+}
+
+
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -46,7 +73,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  
 }
 
 .header-nav
@@ -150,10 +177,11 @@ body {
 
 .nav-ref {
   padding: 24px 0;
-  display: block;
+  position: relative;
 }
 
 .header {
+  
   background-color: var(--white);
   border-bottom: 1px solid #e7e9fc
 }
@@ -199,12 +227,36 @@ body {
 .nav-ref:focus,
 .nav-ref:hover { color: var(--ocean);
 }
+
+.active {
+  color: var(--ocean);
+}
  
+.active::after {
+  content: "";
+  width: 100%;
+  text-decoration: line-through;
+  text-decoration-color: var(--ocean);
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: var(--ocean);
+  border-radius: 2px;
+  
+}
 
 /* ------------------------------------------------ section one */
 .secone {
-  background: var(--navy-blue);
-      padding: 188px 0;
+  background-image:
+  linear-gradient( to bottom,
+  rgba(46, 47, 66, 0.7),
+  rgba(46, 47, 66, 0.7)),
+  url(/images/hero-image.jpg);
+  background-size: cover;
+
+
+  padding: 188px 0;
 }
 
 .secone-title {
