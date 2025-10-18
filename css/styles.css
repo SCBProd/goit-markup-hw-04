@@ -506,7 +506,7 @@ font-size: 16px
     0px 2px 1px rgba(46, 47, 66, 0.08);
     
 }
-.secfour-p {
+.image-list-item:hover .secfour-p {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -515,6 +515,11 @@ font-size: 16px
 footer {
   background: var(--navy-blue);
   padding: 100px 0;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 120px;
 }
 
 .footer-description {
@@ -561,7 +566,7 @@ footer .header-logo-word {
 }
 .social-footer {
   display: flex;
-
+  
 
 
   flex-wrap: wrap;
