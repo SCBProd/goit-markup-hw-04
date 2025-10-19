@@ -359,7 +359,8 @@ body {
 }
 
 .team-social-link {
-  
+  width: 100%;
+  height: 100%;
   background-color: var(--iris);
   border-radius: 50%;
   display: flex;
@@ -367,11 +368,7 @@ body {
   justify-content: center;  
 }
 
- .social-link {
-  width: 100%;
-    height: 100%;
-}
-
+ 
 
 .team-social-link:hover {
   background-color: var(--ocean);
@@ -591,9 +588,6 @@ footer .header-logo-word {
 }
 .social-footer {
   display: flex;
-  
-
-
   flex-wrap: wrap;
   gap: 24px;
   margin-top: 24px;
@@ -608,16 +602,16 @@ footer .header-logo-word {
 
 .social-p {
   color: white;
-  margin-bottom: 16px
+  
 }
 
 .socials-footer {
       display: flex;
       gap: 16px;
-      margin-top: 16px;
+      
       width: 100%;
       height: 100%;
-      margin-left: 16px;
+      
     }
     .first-footer-p {
       margin-right: 120px;
