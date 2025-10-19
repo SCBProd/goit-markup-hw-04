@@ -359,14 +359,20 @@ body {
 }
 
 .team-social-link {
-  width: 100%;
-  height: 100%;
+  
   background-color: var(--iris);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;  
 }
+
+ .social-link {
+  width: 100%;
+    height: 100%;
+}
+
+
 .team-social-link:hover {
   background-color: var(--ocean);
 
@@ -612,6 +618,8 @@ footer .header-logo-word {
       width: 100%;
       height: 100%;
       margin-left: 16px;
+    }
+    .first-footer-p {
       margin-right: 120px;
     }
         .social-footer .social-ico {
